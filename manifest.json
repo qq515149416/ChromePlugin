@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+    "name": "我的音乐播放器插件",
+    "version": "1.0",
+    "description": "我的第一个Chrome扩展，用于日常浏览网页的时候适当的放松听歌",
+    "icons": {
+        "16": "images/laptop.png",
+        "48": "images/laptop48.png",
+        "128": "images/laptop128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/laptop19.png",
+            "38": "images/laptop38.png"
+        },
+        "default_title": "我的音乐播放器插件",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "background": {
+    	"scripts": ["js/jquery.min.js","js/admin.js"]
+    },
+    "permissions": ["*://*.kugou.com/*"]
+}
